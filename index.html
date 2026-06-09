@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SUARA GMK</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+
+<img src="assets/logo-gmk.png" class="logo">
+
+<h1>SUARA GMK</h1>
+
+<p class="subjudul">
+Sarana Kritik dan Saran Generasi Muda Karanganom
+</p>
+
+<form id="aspirasiForm">
+
+<label>
+1. Apakah kinerja kepengurusan GMK sudah memuaskan?
+</label>
+
+<select name="q1" required>
+<option value="">Pilih</option>
+<option>Ya</option>
+<option>Tidak</option>
+</select>
+
+<label>
+2. Apakah Anda puas dengan kinerja Ketua dan Wakil Ketua?
+</label>
+
+<select name="q2" required>
+<option value="">Pilih</option>
+<option>Ya</option>
+<option>Tidak</option>
+</select>
+
+<label>
+3. Apakah setuju ada evaluasi / pergantian pengurus?
+</label>
+
+<select name="q3" required>
+<option value="">Pilih</option>
+<option>Ya</option>
+<option>Tidak</option>
+</select>
+
+<textarea
+name="usulan_pengurus"
+placeholder="Jika Ya, bagian apa yang perlu dibenahi?">
+</textarea>
+
+<label>
+4. Apakah Anda pernah malas menghadiri pertemuan GMK?
+</label>
+
+<select name="q4" required>
+<option value="">Pilih</option>
+<option>Ya</option>
+<option>Tidak</option>
+</select>
+
+<textarea
+name="alasan_malas"
+placeholder="Jika Ya, apa alasannya?">
+</textarea>
+
+<label>
+5. Mengapa Anda memilih diam saat pertemuan?
+</label>
+
+<select name="alasan_diam_pilihan">
+<option value="">Pilih</option>
+<option>Malu / kurang percaya diri</option>
+<option>Takut pendapat tidak diterima</option>
+<option>Kurang memahami topik</option>
+<option>Sudah diwakili anggota lain</option>
+<option>Lainnya</option>
+</select>
+
+<textarea
+name="alasan_diam"
+placeholder="Alasan lainnya...">
+</textarea>
+
+<h2>📝 KRITIK & SARAN</h2>
+
+<select name="kategori">
+<option>Kritik</option>
+<option>Saran</option>
+</select>
+
+<textarea
+name="pesan"
+required
+placeholder="Tuliskan kritik atau saran Anda...">
+</textarea>
+
+<button type="submit">
+🚀 KIRIM ASPIRASI
+</button>
+
+</form>
+
+<div id="hasil"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
